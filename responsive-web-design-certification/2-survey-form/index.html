@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bakery</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="title" class="page-title">The Bakery Survey Form</h1>
+      <p id="description" class="page-description"><i>Thank you for taking the time to help us improve our work</i></p>
+    </header>
+
+    <form id="survey-form" class="bakery-form">
+      <div class="form-control">
+        <label id="name-label" class="field-description" for="name">Name</label>
+        <input type="text" name="name" id="name" class="input" placeholder="Enter your name" required/>
+      </div>
+
+      <div class="form-control">
+        <label id="email-label" class="field-description" for="email">Email</label>
+        <input type="email" name="email" id="email" class="input" placeholder="Enter your email" required/>
+      </div>
+
+      <div class="form-control">
+        <label id="number-label" class="field-description" for="number">Age (Optional)</label>
+        <input type="number" name="number" id="number" class="input" placeholder="Enter your age" min="18" max="100"/>
+      </div>
+    
+      <div class="form-control">
+        <label class="field-description" for="dropdown">Gender</label>
+        <select id="dropdown" class="input" required>
+          <option>Select an option</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+
+      <fieldset class="form-control form-control--input-group">
+        <legend class="field-description">Would you recommend us to your friends or family?</legend>
+
+        <label class="input-container" for="definitely">
+          <input type="radio" name="user-recommend" id="definitely" class="input input--selectable" value="definitely" required/>
+          Definitely
+        </label>
+            
+        <label class="input-container" for="maybe">
+          <input type="radio" name="user-recommend" id="maybe" class="input input--selectable" value="maybe" required/>
+          Maybe
+        </label>
+          
+        <label class="input-container" for="not-sure">
+          <input type="radio" name="user-recommend" id="not-sure" class="input input--selectable" value="not-sure" required/>
+          Not sure
+        </label>
+      </fieldset>        
+
+      <div class="form-control">
+        <label class="field-description" for="user-favorite">Which one our products was your favorite?</label>
+        <select id="user-favorite" class="input" required>
+          <option>Select an option</option>
+          <option>Muffins</option>
+          <option>Cookies</option>
+          <option>Pies</option>
+        </select>
+      </div>
+
+      <fieldset class="form-control form-control--input-group">
+        <legend class="field-description">What would you like to see improved?</legend>
+
+        <label class="input-container" for="customer-service">
+          <input type="checkbox" name="improving" id="customer-service" class="input input--selectable" value="customer-service" required/>
+          Customer service
+        </label>
+        
+        <label class="input-container" for="delivery-process">
+          <input type="checkbox" name="improving" id="delivery-process" class="input input--selectable" value="delivery-process" required/>
+          Delivery process
+        </label>      
+      </fieldset>
+
+      <div class="form-control">
+        <label class="field-description" for="user-comments">Any comments or suggestions?</label>
+        <textarea name="user-comments" id="user-comments" class="input" placeholder="Enter your comment here..." rows="5"></textarea>
+      </div>
+  
+      <div class="form-control form-control--button">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </main>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
