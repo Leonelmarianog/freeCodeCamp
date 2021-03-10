@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="real-rpg-weapons logo" id="header-img" class="company-logo"/>
+      <button id="hamburger-button" class="hamburger-button" aria-label="open menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    </div>
+
+    <nav id="nav-bar" class="navbar">
+      <ul class="nav-item-list nav-item-list--row">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#about-us" class="nav-link">About Us</a></li>
+      </ul>
+    </nav>
+
+    <nav id="dropdown" class="dropdown hidden">
+      <ul class="nav-item-list nav-item-list--column">
+        <li><a href="#services" class="nav-link nav-link--dropdown">Services</a></li>
+        <li><a href="#products" class="nav-link nav-link--dropdown">Products</a></li>
+        <li><a href="#about-us" class="nav-link nav-link--dropdown">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="services"></section>
+
+  <section id="products"></section>
+
+  <section id="about-us"></section>
+  
+  <script src="js/index.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
