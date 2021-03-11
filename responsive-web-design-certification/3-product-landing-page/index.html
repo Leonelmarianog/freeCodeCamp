@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Real RPG Swords</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -20,26 +20,193 @@
 
     <nav id="nav-bar" class="navbar">
       <ul class="nav-item-list nav-item-list--row">
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#products" class="nav-link">Products</a></li>
-        <li><a href="#about-us" class="nav-link">About Us</a></li>
+        <li><a href="#Home" class="nav-link nav-link--border">Home</a></li>
+        <li><a href="#services" class="nav-link nav-link--border">Services</a></li>
+        <li><a href="#products" class="nav-link nav-link--border">Products</a></li>
+        <li><a href="#about-us" class="nav-link nav-link--border">About Us</a></li>
       </ul>
     </nav>
 
     <nav id="dropdown" class="dropdown hidden">
       <ul class="nav-item-list nav-item-list--column">
-        <li><a href="#services" class="nav-link nav-link--dropdown">Services</a></li>
-        <li><a href="#products" class="nav-link nav-link--dropdown">Products</a></li>
-        <li><a href="#about-us" class="nav-link nav-link--dropdown">About Us</a></li>
+        <li><a href="#Home" class="nav-link nav-link--dropdown nav-link--dropdown--border">Home</a></li>
+        <li><a href="#services" class="nav-link nav-link--dropdown nav-link--dropdown--border">Services</a></li>
+        <li><a href="#products" class="nav-link nav-link--dropdown nav-link--dropdown--border">Products</a></li>
+        <li><a href="#about-us" class="nav-link nav-link--dropdown nav-link--dropdown--border">About Us</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="services"></section>
+  <main>
+    <section id="Home" class="section">
+      <h1 class="section-heading">Handcrafted, home-made masterpieces</h1>
+  
+      <form id="form" class="form" action="https://www.freecodecamp.com/email-submit">
+        <div class="form-control">
+          <input type="email" name="email" id="email" class="form-input" placeholder="Enter your email here..." required/>
+        </div>
 
-  <section id="products"></section>
+        <div class="form-control">
+          <input type="submit" id="submit" class="form-button" value="Submit" />
+        </div>
+      </form>
+    </section>
+  
+    <section id="services" class="section">
+      <h1 class="section-heading">Services</h1>
 
-  <section id="about-us"></section>
+      <ul class="no-bullet-list services-container">
+        <li>
+          <a href="/" class="item-link">
+            <article class="service-item">
+              <i class="fas fa-truck service-item-icon"></i>
+              <h1 class="service-item-heading">Fast Shipping</h1>
+              <p class="service-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, libero!</p>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="service-item">
+              <i class="fas fa-truck service-item-icon"></i>
+              <h1 class="service-item-heading">Fast Shipping</h1>
+              <p class="service-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, libero!</p>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="service-item">
+              <i class="fas fa-truck service-item-icon"></i>
+              <h1 class="service-item-heading">Fast Shipping</h1>
+              <p class="service-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, libero!</p>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="products" class="section">
+      <h1 class="section-heading">Products</h1>
+
+      <ul class="no-bullet-list products-container">
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="/" class="item-link">
+            <article class="product-item">
+              <img src="assets/buster-sword.jpg" alt="buster sword" class="product-image">
+              <div class="product-details">
+                <h1 class="product-name">Buster Sword</h1>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptas.</p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="about-us" class="section">
+      <h1 class="section-heading">About Us</h1>
+      <iframe id="video" class="video" width="560" height="315" src="https://www.youtube.com/embed/xogheZdAO18" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </main>
   
   <script src="js/index.js"></script>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
