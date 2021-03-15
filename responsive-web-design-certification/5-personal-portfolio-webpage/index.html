@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="root">
+      <header class="header root__header">
+        <nav id="navbar" class="navbar header__navbar">
+          <ul class="navbar__menu">
+            <li><a href="#welcome-section" class="menu-link">Home</a></li>
+            <li><a href="#about-me" class="menu-link">About</a></li>
+            <li><a href="#skills" class="menu-link">Skills</a></li>
+            <li><a href="#projects" class="menu-link">Projects</a></li>
+            <li><a href="#contact" class="menu-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="button button--hamburger header__button" aria-label="open dropdown">
+          <i class="fa fa-bars button__hamburger-icon" aria-hidden="true"></i>
+
+          <div class="box box--border-1 button__box">
+            <div class="box box--border-2"></div>
+          </div>
+        </button>
+
+        <!-- <nav id="dropdown" class="dropdown header__dropdown">
+          <ul class="dropdown__menu">
+            <li><a href="#welcome-section" class="menu-link">About</a></li>
+            <li><a href="#skills" class="menu-link">Skills</a></li>
+            <li><a href="#projects" class="menu-link">Projects</a></li>
+            <li><a href="#contact" class="menu-link">Contact</a></li>
+          </ul>
+
+          <div class="box box--border-1 box--no-border-top dropdown__box">
+            <div class="box box--border-2 box--padding">
+              <div class="box box--border-3">
+                <div class="box box--border-4">
+                  <div class="box box--border-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav> -->
+
+        <div class="box box--border-1 header__box">
+          <div class="box box--border-2"></div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section id="welcome-section" class="page-section page-section--full-viewport-height">
+          <h1 class="page-section__heading">Hi! I'm Leonel Gauna</h1>
+          <h2 class="page-section__subheading">Web Developer</h2>
+          <a href="#about-me" class="button page-section__button">
+            <div class="box box--border-1 button__box">
+              <div class="box box--border-2"></div>
+            </div>
+
+            Get to know me!
+          </a>
+        </section>
+
+        <section id="about-me" class="page-section">
+          <article class="card page-section__card">
+            <section class="card__section">
+              <article class="personal-profile">
+                <img
+                  src="assets/profile-photo.png"
+                  alt="profile photo"
+                  class="photo personal-profile__photo"
+                />
+                <div class="personal-profile__info">
+                  <p><strong>NAME: </strong>Leonel Gauna</p>
+                  <p><strong>LEVEL: </strong>1</p>
+                  <article class="progress-bar">
+                    <p class="progress-bar__label"><strong>EXP:</strong></p>
+                    <div class="progress-bar__border">
+                      <div class="progress-bar__fill"></div>
+                    </div>
+                  </article>
+                  <p><strong>AGE: </strong>27</p>
+                  <p>
+                    <strong>BIO: </strong>Curious. In continuous learning. Want to improve myself
+                    everyday.
+                  </p>
+                </div>
+              </article>
+            </section>
+
+            <section class="card__section">
+              <h2>EDUCATION</h2>
+              <ul class="list">
+                <li class="list__item">
+                  <h3>R/Argentina Programa</h3>
+                  <ul class="list list--sublist">
+                    <li>Fullstack Junior</li>
+                    <li>January 2020 - Present</li>
+                  </ul>
+                </li>
+                <li class="list__item">
+                  <h3>UTN FRA</h3>
+                  <ul class="list list--sublist">
+                    <li>Ingenieria Electronica</li>
+                    <li>2015 - 2019 (Unfinished)</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+
+            <section class="card__section">
+              <h2>CERTIFICATES</h2>
+              <ul class="list">
+                <li class="list__item">
+                  <h3>Elemental English</h3>
+                  <ul class="list list--sublist">
+                    <li>Institution: UTN FRA</li>
+                  </ul>
+                </li>
+                <li class="list__item">
+                  <h3>Responsive Web Design</h3>
+                  <ul class="list list--sublist">
+                    <li>Institution: freeCodeCamp</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+
+            <div class="box box--border-1 card__box">
+              <div class="box box--border-2 box--padding">
+                <div class="box box--border-3">
+                  <div class="box box--border-4">
+                    <div class="box box--border-5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section id="skills" class="page-section"></section>
+
+        <section id="projects" class="page-section">
+          <article id="project-tile" class="project-tile"></article>
+        </section>
+
+        <section id="contact" class="page-section"></section>
+      </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
