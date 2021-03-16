@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Leonel Gauna Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -18,33 +18,43 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
+  <body class="unscrollable">
     <div class="root">
+      <div id="overlay" class="overlay">
+        <h1 class="overlay__loading">
+          <span>Loading</span>
+          <span class="overlay__dot overlay__dot--1">.</span>
+          <span class="overlay__dot overlay__dot--2">.</span>
+          <span class="overlay__dot overlay__dot--3">.</span>
+        </h1>
+      </div>
+
       <header class="header root__header">
-        <nav id="navbar" class="navbar header__navbar">
-          <ul class="navbar__menu">
-            <li><a href="#welcome-section" class="menu-link">Home</a></li>
-            <li><a href="#about-me" class="menu-link">About</a></li>
-            <li><a href="#skills" class="menu-link">Skills</a></li>
-            <li><a href="#projects" class="menu-link">Projects</a></li>
-            <li><a href="#contact" class="menu-link">Contact</a></li>
+        <nav id="navbar" class="header__navbar">
+          <ul class="menu">
+            <li><a href="#welcome-section" class="menu__link">Home</a></li>
+            <li><a href="#about-me" class="menu__link">About</a></li>
+            <li><a href="#skills" class="menu__link">Skills</a></li>
+            <li><a href="#projects" class="menu__link">Projects</a></li>
+            <li><a href="#contact" class="menu__link">Contact</a></li>
           </ul>
         </nav>
 
-        <button class="button button--hamburger header__button" aria-label="open dropdown">
+        <button class="button button--fixed-size header__button" aria-label="open dropdown">
           <i class="fa fa-bars button__hamburger-icon" aria-hidden="true"></i>
 
-          <div class="box box--border-1 button__box">
+          <div id="hamburger-button" class="box box--border-1 button__box">
             <div class="box box--border-2"></div>
           </div>
         </button>
 
-        <!-- <nav id="dropdown" class="dropdown header__dropdown">
-          <ul class="dropdown__menu">
-            <li><a href="#welcome-section" class="menu-link">About</a></li>
-            <li><a href="#skills" class="menu-link">Skills</a></li>
-            <li><a href="#projects" class="menu-link">Projects</a></li>
-            <li><a href="#contact" class="menu-link">Contact</a></li>
+        <nav id="dropdown" class="dropdown header__dropdown hidden">
+          <ul class="menu menu--column">
+            <li><a href="#welcome-section" class="menu__link">Home</a></li>
+            <li><a href="#about-me" class="menu__link">About</a></li>
+            <li><a href="#skills" class="menu__link">Skills</a></li>
+            <li><a href="#projects" class="menu__link">Projects</a></li>
+            <li><a href="#contact" class="menu__link">Contact</a></li>
           </ul>
 
           <div class="box box--border-1 box--no-border-top dropdown__box">
@@ -56,7 +66,7 @@
               </div>
             </div>
           </div>
-        </nav> -->
+        </nav>
 
         <div class="box box--border-1 header__box">
           <div class="box box--border-2"></div>
@@ -65,20 +75,27 @@
 
       <main class="main-content">
         <section id="welcome-section" class="page-section page-section--full-viewport-height">
-          <h1 class="page-section__heading">Hi! I'm Leonel Gauna</h1>
-          <h2 class="page-section__subheading">Web Developer</h2>
+          <h1
+            class="page-section__heading page-section__heading--margin-sm page-section__heading--margin-top-auto"
+          >
+            Hi! I'm Leonel Gauna
+          </h1>
+          <h2 class="page-section__heading">Web Developer</h2>
           <a href="#about-me" class="button page-section__button">
+            Get to know me!
+
             <div class="box box--border-1 button__box">
               <div class="box box--border-2"></div>
             </div>
-
-            Get to know me!
           </a>
         </section>
 
         <section id="about-me" class="page-section">
+          <h1 class="page-section__heading">About Me</h1>
+
           <article class="card page-section__card">
             <section class="card__section">
+              <h2>PROFILE</h2>
               <article class="personal-profile">
                 <img
                   src="assets/profile-photo.png"
@@ -153,15 +170,226 @@
           </article>
         </section>
 
-        <section id="skills" class="page-section"></section>
+        <section id="skills" class="page-section">
+          <h1 class="page-section__heading">Skills</h1>
 
-        <section id="projects" class="page-section">
-          <article id="project-tile" class="project-tile"></article>
+          <article class="card page-section__card">
+            <section class="card__section">
+              <h2>FRONTEND</h2>
+              <ul class="list">
+                <li class="list__item">HTML</li>
+                <li class="list__item">CSS</li>
+                <li class="list__item">SASS (SCSS)</li>
+                <li class="list__item">Bootstrap</li>
+                <li class="list__item">JavaScript</li>
+                <li class="list__item">React.js</li>
+                <li class="list__item">CSS in JS (styled-components)</li>
+                <li class="list__item">Gulp</li>
+              </ul>
+            </section>
+
+            <section class="card__section">
+              <h2>BACKEND</h2>
+              <ul class="list">
+                <li class="list__item">Node.js</li>
+                <li class="list__item">Express</li>
+                <li class="list__item">SQL</li>
+                <li class="list__item">ORM (Sequelize)</li>
+              </ul>
+            </section>
+
+            <section class="card__section">
+              <h2>GENERAL</h2>
+              <ul class="list">
+                <li class="list__item">GIT</li>
+                <li class="list__item">Jest (Unit Tests)</li>
+                <li class="list__item">Cypress.io (E2E Tests)</li>
+                <li class="list__item">React Testing Library</li>
+                <li class="list__item">CI/CD (Codeship)</li>
+                <li class="list__item">MVC Architecture</li>
+                <li class="list__item">SOLID Principles</li>
+                <li class="list__item">SDLC (Software Development Lifecycle)</li>
+                <li class="list__item">OOP</li>
+              </ul>
+            </section>
+
+            <div class="box box--border-1 card__box">
+              <div class="box box--border-2 box--padding">
+                <div class="box box--border-3">
+                  <div class="box box--border-4">
+                    <div class="box box--border-5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         </section>
 
-        <section id="contact" class="page-section"></section>
+        <section id="projects" class="page-section">
+          <h1 class="page-section__heading">Projects</h1>
+
+          <div class="projects-grid page-section__projects-grid">
+            <a
+              href="https://leonelmarianog.github.io/freeCodeCamp/responsive-web-design-certification/1-tribute-page/"
+              target="_blank"
+              class="project-tile page-section__project-tile"
+            >
+              <article class="project-tile__thumbnail">
+                <div class="project-tile__image-container">
+                  <img
+                    src="assets/tribute-page.png"
+                    alt="tribute page preview"
+                    class="project-tile__image"
+                  />
+
+                  <div class="box box--border-1 project-tile__box">
+                    <div class="box box--border-2"></div>
+                  </div>
+                </div>
+                <div class="project-tile__caption-container">
+                  <p class="project-tile__caption">Tribute Page</p>
+
+                  <div class="box box--border-1 box--no-border-top project-tile__box">
+                    <div class="box box--border-2"></div>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <a
+              href="https://leonelmarianog.github.io/freeCodeCamp/responsive-web-design-certification/1-tribute-page/"
+              target="_blank"
+              class="project-tile page-section__project-tile"
+            >
+              <article class="project-tile__thumbnail">
+                <div class="project-tile__image-container">
+                  <img
+                    src="assets/survey-form.png"
+                    alt="survey form preview"
+                    class="project-tile__image"
+                  />
+
+                  <div class="box box--border-1 project-tile__box">
+                    <div class="box box--border-2"></div>
+                  </div>
+                </div>
+                <div class="project-tile__caption-container">
+                  <p class="project-tile__caption">Survey Form</p>
+
+                  <div class="box box--border-1 box--no-border-top project-tile__box">
+                    <div class="box box--border-2"></div>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <a
+              href="https://leonelmarianog.github.io/freeCodeCamp/responsive-web-design-certification/1-tribute-page/"
+              target="_blank"
+              class="project-tile page-section__project-tile"
+            >
+              <article class="project-tile__thumbnail">
+                <div class="project-tile__image-container">
+                  <img
+                    src="assets/product-page.png"
+                    alt="products page preview"
+                    class="project-tile__image"
+                  />
+
+                  <div class="box box--border-1 project-tile__box">
+                    <div class="box box--border-2"></div>
+                  </div>
+                </div>
+                <div class="project-tile__caption-container">
+                  <p class="project-tile__caption">Products Page</p>
+
+                  <div class="box box--border-1 box--no-border-top project-tile__box">
+                    <div class="box box--border-2"></div>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <a
+              href="https://leonelmarianog.github.io/freeCodeCamp/responsive-web-design-certification/1-tribute-page/"
+              target="_blank"
+              class="project-tile page-section__project-tile"
+            >
+              <article class="project-tile__thumbnail">
+                <div class="project-tile__image-container">
+                  <img
+                    src="assets/technical-documentation-page.png"
+                    alt="technical documentation page preview"
+                    class="project-tile__image"
+                  />
+
+                  <div class="box box--border-1 project-tile__box">
+                    <div class="box box--border-2"></div>
+                  </div>
+                </div>
+                <div class="project-tile__caption-container">
+                  <p class="project-tile__caption">Tech. Doc. Page</p>
+
+                  <div class="box box--border-1 box--no-border-top project-tile__box">
+                    <div class="box box--border-2"></div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <a
+            href="https://github.com/Leonelmarianog"
+            target="_blank"
+            class="button page-section__button"
+          >
+            See more
+            <i class="fab fa-github fa-3x button__wsp-icon"></i>
+
+            <div class="box box--border-1 button__box">
+              <div class="box box--border-2"></div>
+            </div>
+          </a>
+        </section>
+
+        <section id="contact" class="page-section page-section--full-viewport-height">
+          <h1 class="page-section__heading">Contact me</h1>
+
+          <article class="contact-links page-section__contact-links">
+            <ul class="menu">
+              <li>
+                <a href="tel:1555610406" target="_blank" class="menu__link menu__link--padding"
+                  ><i class="fab fa-whatsapp fa-5x"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/leonel-gauna-15590716b/"
+                  target="_blank"
+                  id="profile-link"
+                  class="menu__link menu__link--padding"
+                  ><i class="fab fa-linkedin fa-5x"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="mailto:leonel.mariano.g@gmail.com"
+                  target="_blank"
+                  class="menu__link menu__link--padding"
+                  ><i class="fas fa-envelope fa-5x"></i
+                ></a>
+              </li>
+            </ul>
+
+            <div class="box box--border-1 contact-links__box">
+              <div class="box box--border-2"></div>
+            </div>
+          </article>
+        </section>
       </main>
     </div>
+
+    <script src="js/index.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
